@@ -21,8 +21,8 @@ defmodule TwitterbotWeb do
     quote do
       use Phoenix.Controller, namespace: TwitterbotWeb
       import Plug.Conn
-      import TwitterbotWeb.Router.Helpers
       import TwitterbotWeb.Gettext
+      alias TwitterbotWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -37,9 +37,9 @@ defmodule TwitterbotWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import TwitterbotWeb.Router.Helpers
       import TwitterbotWeb.ErrorHelpers
       import TwitterbotWeb.Gettext
+      alias TwitterbotWeb.Router.Helpers, as: Routes
     end
   end
 
