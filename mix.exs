@@ -45,7 +45,7 @@ defmodule Twitterbot.Mixfile do
       {:ecto_sql, "~> 3.0"},
 
       {:httpotion, "~> 3.1.0"},
-      {:poison, "~> 3.0"}
+      {:jason, "~> 1.0"}
     ]
   end
 
