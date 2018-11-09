@@ -1,7 +1,8 @@
 defmodule TwitterbotWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :twitterbot
 
-  socket "/socket", TwitterbotWeb.UserSocket
+  socket "/socket", TwitterbotWeb.UserSocket,
+    websocket: true # or list of options
 
   # Serve at "/" the static files from "priv/static" directory.
   #
